@@ -13,6 +13,7 @@
     NSMutableArray *favoriteList;
 }
 
+- (IBAction)toggleSwitch:(UISwitch *)sender;
 
 - (void)addBook:(NSNotification *)noti;
 - (void)changeFavoriteValue:(id)sender;

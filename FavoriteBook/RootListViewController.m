@@ -72,11 +72,13 @@
         cell = (RootListCell *)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
     }
-    [cell.favoriteSwitch addTarget:self action:@selector(changeFavoriteValue:) forControlEvents:UIControlEventValueChanged];
     
     Book *book = [bookList objectAtIndex:indexPath.row];
     cell.bookTitle.text = book.title;
-    cell.favoriteSwitch.on = NO;
+    UISwitch *swit = (UISwitch *)book.favorite;
+    cell.favoriteSwitch.on = swit ? YES : NO;
+    
+    NSLog(@"cell indexPath.row: %d", indexPath.row );
     
     return cell;
 }
@@ -168,11 +170,14 @@
     
 }
 
-- (void)changeFavoriteValue:(id)sender
+
+- (IBAction)toggleSwitch:(UISwitch *)cellSwitch
 {
-    UISwitch *cellSwitch = (UISwitch *)sender;
-    UITableViewCell *cell = (UITableViewCell *)cellSwitch.superview;
+    RootListCell *cell = (RootListCell *)cellSwitch.superview;
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
+    //NSIndexPath *indexPath = [self.tableView indexPathForCell: (RootListCell *)[sender superview]];
+    
     
     NSManagedObjectContext *context = [[AppDelegate sharedDelegate] managedObjectContext];
     NSError *error;
@@ -184,15 +189,16 @@
         fav = [NSEntityDescription insertNewObjectForEntityForName:@"Favorite" inManagedObjectContext:context];
         fav.date = [NSDate date];
         book.favorite = fav;
-    
+        
     } else {
         fav = (Favorite *)book.favorite;
         [context deleteObject:fav];
         
     }
-    book = nil;
-    [context save:&error];
+    NSLog(@"toggleSwitch indexPath.row: %d", indexPath.row );
     
+    [context save:&error];
+
 }
 
 @end
