@@ -18,6 +18,13 @@
 		B560AFE5167F654E00E7FB9D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B560AFE4167F654E00E7FB9D /* Default@2x.png */; };
 		B560AFE7167F654E00E7FB9D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B560AFE6167F654E00E7FB9D /* Default-568h@2x.png */; };
 		B560AFEA167F654E00E7FB9D /* FavoriteBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B560AFE8167F654E00E7FB9D /* FavoriteBook.xcdatamodeld */; };
+		B560AFF2167F65F800E7FB9D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560AFF1167F65F800E7FB9D /* MainStoryboard.storyboard */; };
+		B560AFF5167F67D700E7FB9D /* RootListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B560AFF4167F67D700E7FB9D /* RootListViewController.m */; };
+		B560AFF8167F67F300E7FB9D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B560AFF7167F67F300E7FB9D /* DetailViewController.m */; };
+		B560AFFB167F680300E7FB9D /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B560AFFA167F680300E7FB9D /* WriteViewController.m */; };
+		B560AFFF167F69C800E7FB9D /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B560AFFE167F69C800E7FB9D /* Book.m */; };
+		B560B002167F69C800E7FB9D /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = B560B001167F69C800E7FB9D /* Favorite.m */; };
+		B560B009167F70DB00E7FB9D /* RootListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B560B008167F70DB00E7FB9D /* RootListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,19 @@
 		B560AFE4167F654E00E7FB9D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B560AFE6167F654E00E7FB9D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B560AFE9167F654E00E7FB9D /* FavoriteBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteBook.xcdatamodel; sourceTree = "<group>"; };
+		B560AFF1167F65F800E7FB9D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B560AFF3167F67D700E7FB9D /* RootListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootListViewController.h; path = FavoriteBook/RootListViewController.h; sourceTree = "<group>"; };
+		B560AFF4167F67D700E7FB9D /* RootListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootListViewController.m; path = FavoriteBook/RootListViewController.m; sourceTree = "<group>"; };
+		B560AFF6167F67F300E7FB9D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = FavoriteBook/DetailViewController.h; sourceTree = "<group>"; };
+		B560AFF7167F67F300E7FB9D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = FavoriteBook/DetailViewController.m; sourceTree = "<group>"; };
+		B560AFF9167F680300E7FB9D /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
+		B560AFFA167F680300E7FB9D /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
+		B560AFFD167F69C800E7FB9D /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = FavoriteBook/Book.h; sourceTree = "<group>"; };
+		B560AFFE167F69C800E7FB9D /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = FavoriteBook/Book.m; sourceTree = "<group>"; };
+		B560B000167F69C800E7FB9D /* Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Favorite.h; path = FavoriteBook/Favorite.h; sourceTree = "<group>"; };
+		B560B001167F69C800E7FB9D /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Favorite.m; path = FavoriteBook/Favorite.m; sourceTree = "<group>"; };
+		B560B007167F70DB00E7FB9D /* RootListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootListCell.h; sourceTree = "<group>"; };
+		B560B008167F70DB00E7FB9D /* RootListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,8 @@
 		B560AFBF167F654E00E7FB9D = {
 			isa = PBXGroup;
 			children = (
+				B560AFFC167F69B100E7FB9D /* Model */,
+				B560AFF0167F656600E7FB9D /* Classes */,
 				B560AFD6167F654E00E7FB9D /* FavoriteBook */,
 				B560AFCD167F654E00E7FB9D /* Frameworks */,
 				B560AFCB167F654E00E7FB9D /* Products */,
@@ -88,6 +110,7 @@
 				B560AFE0167F654E00E7FB9D /* AppDelegate.m */,
 				B560AFE8167F654E00E7FB9D /* FavoriteBook.xcdatamodeld */,
 				B560AFD7167F654E00E7FB9D /* Supporting Files */,
+				B560AFF1167F65F800E7FB9D /* MainStoryboard.storyboard */,
 			);
 			path = FavoriteBook;
 			sourceTree = "<group>";
@@ -104,6 +127,32 @@
 				B560AFE6167F654E00E7FB9D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B560AFF0167F656600E7FB9D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B560AFF3167F67D700E7FB9D /* RootListViewController.h */,
+				B560AFF4167F67D700E7FB9D /* RootListViewController.m */,
+				B560AFF6167F67F300E7FB9D /* DetailViewController.h */,
+				B560AFF7167F67F300E7FB9D /* DetailViewController.m */,
+				B560AFF9167F680300E7FB9D /* WriteViewController.h */,
+				B560AFFA167F680300E7FB9D /* WriteViewController.m */,
+				B560B007167F70DB00E7FB9D /* RootListCell.h */,
+				B560B008167F70DB00E7FB9D /* RootListCell.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B560AFFC167F69B100E7FB9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B560B000167F69C800E7FB9D /* Favorite.h */,
+				B560B001167F69C800E7FB9D /* Favorite.m */,
+				B560AFFD167F69C800E7FB9D /* Book.h */,
+				B560AFFE167F69C800E7FB9D /* Book.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +210,7 @@
 				B560AFE3167F654E00E7FB9D /* Default.png in Resources */,
 				B560AFE5167F654E00E7FB9D /* Default@2x.png in Resources */,
 				B560AFE7167F654E00E7FB9D /* Default-568h@2x.png in Resources */,
+				B560AFF2167F65F800E7FB9D /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +224,12 @@
 				B560AFDD167F654E00E7FB9D /* main.m in Sources */,
 				B560AFE1167F654E00E7FB9D /* AppDelegate.m in Sources */,
 				B560AFEA167F654E00E7FB9D /* FavoriteBook.xcdatamodeld in Sources */,
+				B560AFF5167F67D700E7FB9D /* RootListViewController.m in Sources */,
+				B560AFF8167F67F300E7FB9D /* DetailViewController.m in Sources */,
+				B560AFFB167F680300E7FB9D /* WriteViewController.m in Sources */,
+				B560AFFF167F69C800E7FB9D /* Book.m in Sources */,
+				B560B002167F69C800E7FB9D /* Favorite.m in Sources */,
+				B560B009167F70DB00E7FB9D /* RootListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
